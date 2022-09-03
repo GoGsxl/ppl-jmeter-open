@@ -58,4 +58,10 @@
 
     2、Jenkins设置及报告、参数化请查阅博客进行~
 
-[广深-小龙 --扬帆起航-博客园](https://www.cnblogs.com/gsxl/tag/fiddler "PPL博客园")
+## [广深-小龙 --扬帆起航-博客园，有问题看我的简介"有话好好说"](https://blog.csdn.net/qq_42675140 "PPL博客园")
+
+github：[https://github.com/git-gsxl/ppl-jmeter-open](https://github.com/git-gsxl/ppl-jmeter-open)
+
+码 云：[https://github.com/git-gsxl/ppl-jmeter-open](https://github.com/git-gsxl/ppl-jmeter-open)
+
+如果觉得还可以请点个**start**！
