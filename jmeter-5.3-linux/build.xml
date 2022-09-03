@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="ant-jmeter-test" default="run" basedir=".">
+    <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+    <tstamp>
+        <format property="time" pattern="yyyyMMddhhmm" />
+    </tstamp>
+
+    <!-- （1）需要改成自己本地的 Jmeter 目录-->
+    <property name="jmeter.home" value="./" />
+
+	<!-- （2）jmeter生成jtl格式的结果报告的路径-->
+    <!-- jmeter生成jtl格式的结果报告的路径， value="./jtl"-->
+	<!-- jmeter生成html格式的结果报告的路径，value="./html"-->
+    <property name="jmeter.result.jtl.dir" value="./jtl" />
+    <property name="jmeter.result.html.dir" value="../" />
+
+	<!-- （3）生成的报告的前缀:value-->
+    <property name="ReportName" value="InterfaceReport"/>
+
+    <property name="report.title" value="report"/>
+	<property name="jmeter.result.jtlName" value="${jmeter.result.jtl.dir}/${ReportName}.jtl" />
+    <property name="jmeter.result.htmlName" value="${jmeter.result.html.dir}/${ReportName}.html"/>
+    <target name="run">
+        <antcall target="test"/>
+        <antcall target="report"/>
+    </target>
+    <target name="test">
+        <taskdef name="jmeter" classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTask"/>
+        <jmeter jmeterhome="${jmeter.home}" resultlog="${jmeter.result.jtlName}">
+
+             <!-- （4）声明要运行的脚本。yxx-openApi.jmx 指包含此目录下的所有jmeter脚本，需要改成自己本地的目录-->
+            <testplans dir="../" includes="*.jmx" />
+
+            <property name="jmeter.save.saveservice.output_format" value="xml"/>
+        </jmeter>
+    </target>
+    <path id="xslt.classpath">
+        <fileset dir="${jmeter.home}/lib" includes="xalan*.jar"/>
+        <fileset dir="${jmeter.home}/lib" includes="serializer*.jar"/>
+    </path>
+    <target name="report">
+        <tstamp>
+            <format property="report.datestamp" pattern="yyyy/MM/dd HH:mm"/>
+        </tstamp>
+        <xslt classpathref="xslt.classpath"
+			  force="true" in="${jmeter.result.jtlName}"
+			  out="${jmeter.result.htmlName}"
+
+			  style="./xsl/jmeter.results.shanhe.me.xsl">
+			  <!--（5）样式目录：/extras/xxx.xsl -->
+
+            <param name="dateReport" expression="${report.datestamp}"/>
+        </xslt>
+        <copy todir="${jmeter.result.html.dir}">
+            <fileset dir="${jmeter.home}/extras">
+                <include name="collapse.png"/>
+                <include name="expand.png"/>
+            </fileset>
+        </copy>
+    </target>
+    <path id="lib_classpath">
+        <fileset dir="${basedir}/">
+            <include name="mail*.jar"/>
+            <include name="activation*.jar"/>
+            <include name="commons-email*.jar"/>
+            <include name="ant-contrib*.jar"/>
+        </fileset>
+    </path>
+</project>

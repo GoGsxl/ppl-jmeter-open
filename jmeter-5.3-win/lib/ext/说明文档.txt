@@ -1,0 +1,10 @@
+1、将所以jar包放置 jmeter/lib/ext 下
+2、重启 jmeter
+3、使用 PostMan 请求在线生成 jsonschema 填写至断言处，curl：
+
+curl -X POST \
+  https://json-schema-inferrer.herokuapp.com/inferenceRequestFormSubmit \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -F 'sample={"data":{"access":1},"retCode":"0"}' \
+  -F 'requiredPolicy= commonFields' \
+  -F defaultPolicy=useLastSamples
