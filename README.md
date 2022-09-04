@@ -6,12 +6,12 @@
 
 2、Windows命令行执行：build.exe params 格式如下(win及linux一致)
 
-    格   式：build.exe env,param1:value1,key,url,jmx
+    格   式：build.exe env,key,param1:value1,url,jmx
 
     参数说明：
         env：环境唯一标识,详细看 `jmx编写规范`
+        key：机器人推送的key(默认企微/钉钉),长度=64则推送钉钉
         param1:value1：追加的参数替换(多个时使用2个下划线连接`__`)，如 k:v__k1:v1
-        key：机器人推送的key(企微)
         url：推送的在线报告链接，通常用于jenkins持续集成生成的报告链接
         jmx：指定运行的jmx文件(默认为项目根目录的所有jmx)如：demo.jmx,通常不需要改变
 
@@ -27,7 +27,7 @@
     使用场景：可根据命令行匹配指定执行的环境
     
     2、追加替换的参数,比如demo中`用户定义的变量`的`add_param`,使用时命令行追加替换
-       如：build.exe pro,k1:v1__k2:v2,key
+       如：build.exe pro,key,k1:v1__k2:v2
     使用场景：环境变量中需要运行时动态更换参数，进行测试~
 
 ### 三、使用文档
