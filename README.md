@@ -68,4 +68,4 @@ github：[https://github.com/ppl-jmeter-open](https://github.com/git-gsxl/ppl-jm
 
 gitee ：[https://gitee.com/ppl-jmeter-open](https://gitee.com/qq772262624/ppl-jmeter-open)
 
-如果觉得还可以请点个**start**！
+如果觉得还可以请点个**stars**！
