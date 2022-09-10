@@ -64,6 +64,6 @@
 
 github：[https://github.com/git-gsxl/ppl-jmeter-open](https://github.com/git-gsxl/ppl-jmeter-open)
 
-码 云：[https://github.com/git-gsxl/ppl-jmeter-open](https://github.com/git-gsxl/ppl-jmeter-open)
+码 云：[https://github.com/git-gsxl/ppl-jmeter-open](https://gitee.com/qq772262624/ppl-jmeter-open)
 
 如果觉得还可以请点个**start**！
