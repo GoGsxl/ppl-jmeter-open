@@ -1,4 +1,4 @@
-chmod 777 jmeter-5.3-linux/ant/bin/ant && chmod 777 ./build && chmod 777 ./build-docker && chmod 777 jmeter-5.3-linux/lib/ext/JMeterPluginsCMD.sh && chmod 777 jmeter-5.3-linux/*
+chmod 777 jmeter-5.3-linux/ant/bin/ant && chmod 777 ./build && chmod 777 ./build-docker && chmod 777 jmeter-5.3-linux/lib/ext/JMeterPluginsCMD.sh
 
 # Jenkins 持续集成(上述ant、build需先授权777权限)
 
