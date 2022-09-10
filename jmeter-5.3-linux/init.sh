@@ -1,4 +1,4 @@
-sudo chmod 777 ant/bin/ant && sudo chmod 777 ../build
+chmod 777 ant/bin/ant && chmod 777 ../build
 
 # Jenkins 持续集成(上述ant、build需先授权777权限)
 
