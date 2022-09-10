@@ -1,5 +1,5 @@
 ## PPL-Jmeter
-    build.exe：   Windows 使用
+    build.exe：   Windows使用
     build：       linux使用 非docker-jenkins部署
     build-docker：linux使用 docker-jenkins部署
 
