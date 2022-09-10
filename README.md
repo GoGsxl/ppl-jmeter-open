@@ -2,7 +2,7 @@
 
 
 ### 流程图
-![广深-小龙 --扬帆起航-博客园](Jmeter-Ant.png "PPL博客园")
+![广深-小龙 --扬帆起航-博客园](./Jmeter-Ant.png "PPL博客园")
 
 1、Windows(默认配置)双击运行：`build.exe`
 
