@@ -2,7 +2,7 @@
 
 
 ### 流程图
-![广深-小龙 --扬帆起航-博客园](https://img-blog.csdnimg.cn/7b4864d356804738b05451626646c727.png "PPL博客园")
+![十尾仙狸 --扬帆起航-博客园](https://img-blog.csdnimg.cn/7b4864d356804738b05451626646c727.png "PPL博客园")
 
 1、Windows(默认配置)双击运行：`build.exe`
 
@@ -60,7 +60,7 @@
 
     2、Jenkins设置及报告、参数化请查阅博客进行~
 
-## [广深-小龙 博客园，有问题看我的简介"有话好好说"](https://blog.csdn.net/qq_42675140 "PPL博客园")
+## [十尾仙狸 博客园，有问题看我的简介"有话好好说"](https://blog.csdn.net/qq_42675140 "PPL博客园")
 
 github：[https://github.com/git-gsxl/ppl-jmeter-open](https://github.com/git-gsxl/ppl-jmeter-open)
 
