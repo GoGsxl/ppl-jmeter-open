@@ -10,12 +10,12 @@
 
 2、Windows命令行执行：build.exe params 格式如下(win及linux一致)
 
-    格   式：build.exe env,param1:value1,key,url,jmx
+    格   式：build.exe env,key,param1:value1,url,jmx
 
     参数说明：
         env：环境唯一标识,详细看 `jmx编写规范`
-        param1:value1：追加的参数替换(多个时使用2个下划线连接`__`),如 k:v__k1:v1
         key：机器人推送的key(企微)
+        param1:value1：追加的参数替换(多个时使用2个下划线连接`__`),如 k:v__k1:v1
         url：推送的在线报告链接,通常用于jenkins持续集成生成的报告链接
         jmx：指定运行的jmx文件(默认为项目根目录的所有jmx)如：demo.jmx,通常不需要改变
 
@@ -68,4 +68,4 @@ github：[https://github.com/ppl-jmeter-open](https://github.com/git-gsxl/ppl-jm
 
 gitee ：[https://gitee.com/ppl-jmeter-open](https://gitee.com/qq772262624/ppl-jmeter-open)
 
-如果觉得还可以请点个**stars**！
+如果觉得还可以请点个**star**！
