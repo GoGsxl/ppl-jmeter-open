@@ -1,7 +1,7 @@
 ## PPL-Jmeter
-    build.exe：   Windows使用
-    build：       linux使用 非docker-jenkins部署
-    build-docker：linux使用 docker-jenkins部署
+    build.exe：   Windows下使用
+    build：       非docker-jenkins部署使用
+    build-docker：docker-jenkins部署使用
 
 ### 流程图
 ![十尾仙狸 --扬帆起航-博客园](https://img-blog.csdnimg.cn/7b4864d356804738b05451626646c727.png "PPL博客园")
@@ -10,7 +10,7 @@
 
 2、Windows命令行执行：build.exe params 格式如下(win及linux一致)
 
-    格   式：build.exe env,key,param1:value1,url,jmx
+    格   式：build.exe env key param1:value1__param2:value2 url jmx
 
     参数说明：
         env：环境唯一标识,详细看 `jmx编写规范`
@@ -31,7 +31,7 @@
     使用场景：可根据命令行匹配指定执行的环境
     
     2、追加替换的参数,比如demo中`用户定义的变量`的`add_param`,使用时命令行追加替换
-       如：build.exe pro,k1:v1__k2:v2,key
+       如：build.exe pro key k1:v1__k2:v2
     使用场景：环境变量中需要运行时动态更换参数,进行测试~
 
 ### 三、build使用文档
@@ -62,7 +62,7 @@
 
     2、Jenkins设置及报告、参数化请查阅博客进行~
 
-## [十尾仙狸 博客园，有问题看我的简介"有话好好说"](https://blog.csdn.net/qq_42675140 "PPL博客园")
+## [十尾仙狸，直戳简介"有话好好说"](https://blog.csdn.net/qq_42675140 "PPL博客园")
 
 github：[https://github.com/ppl-jmeter-open](https://github.com/git-gsxl/ppl-jmeter-open)
 
