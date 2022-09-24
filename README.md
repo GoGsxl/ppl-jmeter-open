@@ -46,11 +46,10 @@
     
     pwd=./ppl-jmeter
 
-    1、777权限设置：chmod 777 jmeter-5.3-linux/ant/bin/ant 
+    1、777权限设置：sudo sh init.sh
+    或 chmod 777 jmeter-5.3-linux/ant/bin/ant && 777权限设置：chmod 777 build 
 
-    2、777权限设置：chmod 777 build 
-    
-    3、运行demo：./build `可接更多参数,请查阅本文档开始的`参数格式说明`
+    2、运行demo：./build `可接更多参数,请查阅本文档开始的`参数格式说明`
 
 3、场景：使用`Windows/Linux` Jenkins持续集成 [点击查看博客园](https://blog.csdn.net/qq_42675140/article/details/126783757 "PPL博客园")
     
