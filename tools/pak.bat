@@ -1,0 +1,1 @@
+pyinstaller -F -i build.ico build.py
